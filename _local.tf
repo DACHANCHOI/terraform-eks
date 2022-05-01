@@ -2,10 +2,10 @@ locals {
   region = var.region
   tags   = merge(var.tags, { Owner = var.owner, Environment = var.env })
 
-  vpc_id             = "vpc-0f9d114f4c90aa143"
-  private_subnet_ids = ["subnet-08103984b3ead6ce4", "subnet-0770fd397c68db3a5"]
-  azs                = ["ap-northeast-2a", "ap-northeast-2c"]
-  default_sg_id      = "sg-00b0d77c2cd7ee62c"
+  vpc_id             = var.vpc_id
+  private_subnet_ids = var.private_subnet_ids
+  azs                = var.azs
+  default_sg_id      = var.default_sg_id
 
   name        = format("%s", var.name)
   worker_name = format("worker")

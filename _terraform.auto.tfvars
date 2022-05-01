@@ -3,6 +3,11 @@ name  = "guest-dcc"
 owner = "dcc"
 tags  = {}
 
+vpc_id             = ""
+private_subnet_ids = ""
+azs                = ""
+default_sg_id      = ""
+
 cluster_version = "1.21"
 cluster_endpoint_private_access = true
 cluster_endpoint_public_access = true
