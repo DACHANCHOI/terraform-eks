@@ -15,9 +15,9 @@
 
 [Welcome](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.3/)
 
-1. **helm 으로 aws-load-balancer-controller 생성** 
-** git clone https://github.com/DACHANCHOI/k8-cicd-argocd.git 
-** cd aws-load-balancer-controller 
-** vaules-eks.yaml clusterName 수정 
-** make upgrade-eks 
+1. **helm 으로 aws-load-balancer-controller 생성**. 
+** git clone https://github.com/DACHANCHOI/k8-cicd-argocd.git. 
+** cd aws-load-balancer-controller. 
+** vaules-eks.yaml clusterName 수정. 
+** make upgrade-ek. 
 ![image](https://user-images.githubusercontent.com/77256060/166134655-239aef3f-05b3-4f0e-b76e-f8011f3adef2.png)
