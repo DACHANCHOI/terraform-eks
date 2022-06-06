@@ -2,10 +2,9 @@ locals {
   region = var.region
   tags   = merge(var.tags, { Owner = var.owner, Environment = var.env })
 
-  vpc_id             = var.vpc_id
-  private_subnet_ids = var.private_subnet_ids
-  azs                = var.azs
-  default_sg_id      = var.default_sg_id
+  vpc_id             = data.terraform_remote_state.vpc.outputs.vpc_id
+  private_subnet_ids = data.terraform_remote_state.vpc.outputs.private_subnet_ids
+  azs                = data.terraform_remote_state.vpc.outputs.azs
 
   name        = format("%s", var.name)
   worker_name = format("worker")

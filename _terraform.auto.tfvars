@@ -1,12 +1,7 @@
 env   = "dev"
-name  = "guest-dcc"
+name  = "dcc"
 owner = "dcc"
 tags  = {}
-
-vpc_id             = ""
-private_subnet_ids = ""
-azs                = ""
-default_sg_id      = ""
 
 cluster_version = "1.21"
 cluster_endpoint_private_access = true
@@ -15,7 +10,7 @@ cluster_endpoint_public_access = true
 worker_instance_type = "t3.small"
 worker_instance_count = 2
 // worker_instance_public_ip = true
-worker_key_name = "guest"
+worker_key_name = "Mac-DC"
 
 enable_irsa = true
 
